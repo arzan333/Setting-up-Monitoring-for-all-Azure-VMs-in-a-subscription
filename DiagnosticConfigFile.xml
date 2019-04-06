@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>  
+<PublicConfig xmlns="http://schemas.microsoft.com/ServiceHosting/2010/10/DiagnosticsConfiguration">  
+  <WadCfg>  
+    <DiagnosticMonitorConfiguration overallQuotaInMB="10000">  
+      <PerformanceCounters scheduledTransferPeriod="PT1M">  
+        <PerformanceCounterConfiguration counterSpecifier="\LogicalDisk(_Total)\% Disk Time" sampleRate="PT1M" unit="percent" />
+        <PerformanceCounterConfiguration counterSpecifier="\LogicalDisk(_Total)\% Disk Read Time" sampleRate="PT1M" unit="percent" />
+        <PerformanceCounterConfiguration counterSpecifier="\LogicalDisk(_Total)\% Disk Write Time" sampleRate="PT1M" unit="percent" />
+        <PerformanceCounterConfiguration counterSpecifier="\LogicalDisk(_Total)\% Idle Time" sampleRate="PT1M" unit="percent" />
+        <PerformanceCounterConfiguration counterSpecifier="\LogicalDisk(_Total)\Disk Bytes/sec" sampleRate="PT1M" unit="BytesPerSecond" />
+        <PerformanceCounterConfiguration counterSpecifier="\LogicalDisk(_Total)\Disk Read Bytes/sec" sampleRate="PT1M" unit="BytesPerSecond" />  
+        <PerformanceCounterConfiguration counterSpecifier="\LogicalDisk(_Total)\Disk Write Bytes/sec" sampleRate="PT1M" unit="percent" />  
+        <PerformanceCounterConfiguration counterSpecifier="\LogicalDisk(_Total)\Disk Transfers/sec" sampleRate="PT1M" unit="BytesPerSecond" />  
+        <PerformanceCounterConfiguration counterSpecifier="\LogicalDisk(_Total)\Disk Reads/sec" sampleRate="PT1M" unit="BytesPerSecond" />  
+        <PerformanceCounterConfiguration counterSpecifier="\LogicalDisk(_Total)\Disk Writes/sec" sampleRate="PT1M" unit="BytesPerSecond" />  
+        <PerformanceCounterConfiguration counterSpecifier="\LogicalDisk(_Total)\Avg. Disk sec/Read" sampleRate="PT1M" unit="count" />
+        <PerformanceCounterConfiguration counterSpecifier="\LogicalDisk(_Total)\Avg. Disk sec/Write" sampleRate="PT1M" unit="count" />
+        <PerformanceCounterConfiguration counterSpecifier="\LogicalDisk(_Total)\Avg. Disk Queue Length" sampleRate="PT1M" unit="count" /> 
+        <PerformanceCounterConfiguration counterSpecifier="\LogicalDisk(_Total)\Avg. Disk Read Queue Length" sampleRate="PT1M" unit="count" /> 
+        <PerformanceCounterConfiguration counterSpecifier="\LogicalDisk(_Total)\Avg. Disk Write Queue Length" sampleRate="PT1M" unit="count" /> 
+        <PerformanceCounterConfiguration counterSpecifier="\LogicalDisk(_Total)\% Free Space" sampleRate="PT1M" unit="percent" />
+        <PerformanceCounterConfiguration counterSpecifier="\LogicalDisk(_Total)\Free Megabytes" sampleRate="PT1M" unit="count" />
+		<PerformanceCounterConfiguration counterSpecifier="\Processor Information(_Total)\% Processor Time" sampleRate="PT1M" unit="percent" />
+        <PerformanceCounterConfiguration counterSpecifier="\Processor Information(_Total)\% Privileged Time" sampleRate="PT1M" unit="percent" />
+        <PerformanceCounterConfiguration counterSpecifier="\Processor Information(_Total)\% User Time" sampleRate="PT1M" unit="percent" />
+        <PerformanceCounterConfiguration counterSpecifier="\Processor Information(_Total)\Processor Frequency" sampleRate="PT1M" unit="count" />
+        <PerformanceCounterConfiguration counterSpecifier="\System\Processes" sampleRate="PT1M" unit="count" />
+        <PerformanceCounterConfiguration counterSpecifier="\Process(_Total)\Thread Count" sampleRate="PT1M" unit="count" />
+        <PerformanceCounterConfiguration counterSpecifier="\Process(_Total)\Handle Count" sampleRate="PT1M" unit="count" />
+        <PerformanceCounterConfiguration counterSpecifier="\System\System Up Time" sampleRate="PT1M" unit="count" />
+        <PerformanceCounterConfiguration counterSpecifier="\System\Context Switches/sec" sampleRate="PT1M" unit="CountPerSecond" />
+        <PerformanceCounterConfiguration counterSpecifier="\System\Processor Queue Length" sampleRate="PT1M" unit="count" />
+		<PerformanceCounterConfiguration counterSpecifier="\Memory\% Committed Bytes In Use" sampleRate="PT1M" unit="percent" />
+		<PerformanceCounterConfiguration counterSpecifier="\Memory\Available Bytes" sampleRate="PT1M" unit="Bytes" />
+		<PerformanceCounterConfiguration counterSpecifier="\Memory\Committed Bytes" sampleRate="PT1M" unit="Bytes" />
+		<PerformanceCounterConfiguration counterSpecifier="\Memory\Cache Bytes" sampleRate="PT1M" unit="Bytes" />
+		<PerformanceCounterConfiguration counterSpecifier="\Memory\Pool Paged Bytes" sampleRate="PT1M" unit="Bytes" />
+		<PerformanceCounterConfiguration counterSpecifier="\Memory\Pool Nonpaged Bytes" sampleRate="PT1M" unit="Bytes" />
+		<PerformanceCounterConfiguration counterSpecifier="\Memory\Pages/sec" sampleRate="PT1M" unit="CountPerSecond" />
+		<PerformanceCounterConfiguration counterSpecifier="\Memory\Page Faults/sec" sampleRate="PT1M" unit="CountPerSecond" />
+		<PerformanceCounterConfiguration counterSpecifier="\Process(_Total)\Working Set" sampleRate="PT1M" unit="count" />
+		<PerformanceCounterConfiguration counterSpecifier="\Process(_Total)\Working Set - Private" sampleRate="PT1M" unit="count" />
+		<PerformanceCounterConfiguration counterSpecifier="\Network Interface(*)\Bytes Received/sec" sampleRate="PT1M" unit="Bytes/sec" />
+		<PerformanceCounterConfiguration counterSpecifier="\Network Interface(*)\Packets/sec" sampleRate="PT1M" unit="Bytes/sec" />
+		<PerformanceCounterConfiguration counterSpecifier="\Network Interface(*)\Packets Sent/sec" sampleRate="PT1M" unit="Bytes/sec" />
+		<PerformanceCounterConfiguration counterSpecifier="\Network Interface(*)\Bytes Received/sec" sampleRate="PT1M" unit="Bytes/sec" />
+		<PerformanceCounterConfiguration counterSpecifier="\Network Interface(*)\Packets Outbound Errors" sampleRate="PT1M" unit="count" />
+		<PerformanceCounterConfiguration counterSpecifier="\Network Interface(*)\Packets Received Errors" sampleRate="PT1M" unit="count" />
+		<PerformanceCounterConfiguration counterSpecifier="\SQLServer:Buffer Manager\Page reads/sec" sampleRate="PT1M" unit="count" />
+		<PerformanceCounterConfiguration counterSpecifier="\SQLServer:Buffer Manager\Page writes/sec" sampleRate="PT1M" unit="count" />
+		<PerformanceCounterConfiguration counterSpecifier="\SQLServer:Buffer Manager\Checkpoint pages/sec" sampleRate="PT1M" unit="count" />
+		<PerformanceCounterConfiguration counterSpecifier="\SQLServer:Buffer Manager\Lazy writes/sec" sampleRate="PT1M" unit="count" />
+		<PerformanceCounterConfiguration counterSpecifier="\SQLServer:Buffer Manager\Buffer cache hit ratio" sampleRate="PT1M" unit="count" />
+		<PerformanceCounterConfiguration counterSpecifier="\SQLServer:Buffer Manager\Database pages" sampleRate="PT1M" unit="count" />
+		<PerformanceCounterConfiguration counterSpecifier="\SQLServer:Memory Manager\Total Server Memory (KB)" sampleRate="PT1M" unit="count" />
+		<PerformanceCounterConfiguration counterSpecifier="\SQLServer:Memory Manager\Memory Grants Pending" sampleRate="PT1M" unit="count" />
+		<PerformanceCounterConfiguration counterSpecifier="\SQLServer:General Statistics\User Connections" sampleRate="PT1M" unit="count" />
+		<PerformanceCounterConfiguration counterSpecifier="\SQLServer:SQL Statistics\Batch Requests/sec" sampleRate="PT1M" unit="count" />
+		<PerformanceCounterConfiguration counterSpecifier="\SQLServer:SQL Statistics\SQL Compilations/sec" sampleRate="PT1M" unit="count" />
+      </PerformanceCounters>  
+      <Metrics resourceId="VMRID">
+        <MetricAggregation scheduledTransferPeriod="PT1H"/>
+        <MetricAggregation scheduledTransferPeriod="PT1M"/>
+    </Metrics>  
+        
+    </DiagnosticMonitorConfiguration>  
+  </WadCfg>
+  <StorageAccount>StorageAccount1</StorageAccount>  
+</PublicConfig>
